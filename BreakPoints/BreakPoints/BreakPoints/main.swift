@@ -51,6 +51,11 @@ for person in people {
  
  e person1.name = "Anshu"
  
+ expression -l objc -o -- window.contentView! (command for swift code changed to objective c)
+ error: use of undeclared identifier 'window'
+ (lldb) expression -l objc -o -- `window.contentView!` (`window.contentView!` - will work fine as objective c code)
+ <NSView: 0x6000033180a0>
+ 
 4) continue -:(c)  (run the continue)
  
  * (lldb) e person1.name = "Anshu"
